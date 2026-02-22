@@ -1,3 +1,4 @@
+#! python3
 import alchemy
 
 
@@ -13,7 +14,7 @@ def main() -> None:
 
     print('Testing direct module access:')
     for func in demo_functions:
-        print(f'alchemy.element.{func.__name__}(): {func()}')
+        print(f'alchemy.elements.{func.__name__}(): {func()}')
     print('')
 
     print('Testing direct module access:')
@@ -39,8 +40,8 @@ def main() -> None:
         print('AttributeError - not exposed')
 
     print('\nPackage Metadata:')
-    print(f'Name: {alchemy.__name__}')
     print(f'Version: {alchemy.__version__}')
+    print(f'Author: {alchemy.__author__}')
 
 
 if __name__ == "__main__":
